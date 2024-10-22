@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Travel and Tour Booking</title>
+</head>
+
+<body>
+    <header>
+        <h1>Travel and Tour Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#tours">Tours</a></li>
+                <li><a href="#booking">Book a Tour</a></li>
+                <li><a href="#bookings">Bookings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="tours" class="tours">
+            <h2>Our Tours</h2>
+            <div class="tour-card">
+                <img src="images/paris.jpg" alt="Paris Tour">
+                <h3>Paris Tour</h3>
+                <p>Explore the city of love!</p>
+                <p>Price: $1200</p>
+            </div>
+            <div class="tour-card">
+                <img src="images/newyork.jpg" alt="New York Tour">
+                <h3>New York Tour</h3>
+                <p>Experience the big apple!</p>
+                <p>Price: $1500</p>
+            </div>
+            <div class="tour-card">
+                <img src="images/newyork.jpg" alt="New York Tour">
+                <h3>New York Tour</h3>
+                <p>Experience the big apple!</p>
+                <p>Price: $1500</p>
+            </div>
+            <!-- Add more tours as needed -->
+        </section>
+
+        <section id="booking" class="booking-form">
+            <h2>Book a Tour</h2>
+            <form id="tourBookingForm">
+                <label for="tour">Select Tour:</label>
+                <select id="tour" required>
+                    <option value="" disabled selected>Select a tour</option>
+                    <option value="Paris Tour">Paris Tour</option>
+                    <option value="New York Tour">New York Tour</option>
+                    <!-- Add more options based on available tours -->
+                </select>
+
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" required>
+
+                <button type="submit">Submit Booking</button>
+            </form>
+            <div id="responseMessage"></div>
+        </section>
+
+        <section id="bookings" class="booking-list">
+            <h2>Bookings</h2>
+            <div class="booking-cards" id="bookingCards">
+                <!-- Booking cards will be dynamically added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Travel and Tour Booking</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

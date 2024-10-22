@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #35424a;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.tours {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tour-card {
+    background: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tour-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.booking-form {
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.booking-form label {
+    margin: 10px 0 5px;
+}
+
+.booking-form input,
+.booking-form select {
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.booking-form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #35424a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.booking-form button:hover {
+    background-color: #4a4e54;
+}
+
+.booking-list {
+    margin: 20px 0;
+}
+
+.booking-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.booking-card {
+    background: white;
+    border-radius: 5px;
+    margin: 15px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px 0;
+    background-color: #35424a;
+    color: white;
+}
+
+#responseMessage {
+    margin-top: 10px;
+    color: green;
+}
